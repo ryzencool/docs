@@ -17,15 +17,16 @@
   },
   "topbarLinks": [
     {
-      "name": "支持",
-      "url": "zmyjust@gmail.com"
+      "name": "获取支持",
+      "url": "https://pd.qq.com/s/5n1eedek0"
     }
   ],
-  "topbarCtaButton": {
-    "name": "看板",
-    "url": "https://dashboard.mintlify.com"
-  },
+
   "tabs": [
+    {
+      "name": "产品理念",
+      "url": "introduction"
+    },
     {
       "name": "AI 捷径",
       "url": "prompts"
@@ -37,29 +38,27 @@
     {
       "name": "同步插件",
       "url": "sync-plugin"
+    },
+    {
+      "name": "下载更新",
+      "url": "download"
+    },
+    {
+      "name": "预览版",
+      "url": "test"
     }
   ],
   "anchors": [
     {
-      "name": "下载地址",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "QQ 频道",
       "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://pd.qq.com/s/5n1eedek0"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "理念",
+      "pages": ["introduction/doc"]
     },
 
     {
@@ -73,6 +72,14 @@
         "sync-plugin/list/siyuan",
         "sync-plugin/list/notion"
       ]
+    },
+    {
+      "group": "下载&更新",
+      "pages": ["download/doc"]
+    },
+    {
+      "group": "下载预览",
+      "pages": ["test/doc"]
     }
   ],
   "footerSocials": {
