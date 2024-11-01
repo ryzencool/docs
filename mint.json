@@ -24,7 +24,7 @@
 
   "tabs": [
     {
-      "name": "产品理念",
+      "name": "核心理念",
       "url": "introduction"
     },
     {
@@ -46,6 +46,10 @@
     {
       "name": "预览版",
       "url": "test"
+    },
+    {
+      "name": "Roadmap",
+      "url": "roadmap"
     }
   ],
   "anchors": [
@@ -53,6 +57,11 @@
       "name": "QQ 频道",
       "icon": "slack",
       "url": "https://pd.qq.com/s/5n1eedek0"
+    },
+    {
+      "name": "小红书",
+      "icon": "reddit",
+      "url": "https://www.xiaohongshu.com/user/profile/634fe55d000000001901f130"
     }
   ],
   "navigation": [
@@ -64,6 +73,10 @@
     {
       "group": "使用方法",
       "pages": ["prompts/tutorial/doc", "prompts/tutorial/fav"]
+    },
+    {
+      "group": "笔记插件",
+      "pages": ["note-plugin/doc"]
     },
     {
       "group": "插件列表",
@@ -80,11 +93,18 @@
     {
       "group": "下载预览",
       "pages": ["test/doc"]
+    },
+    {
+      "group": "Roadmap",
+      "pages": ["roadmap/doc"]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
   }
 }
