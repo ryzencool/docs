@@ -1,9 +1,9 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Dinox官方文档",
+  "name": "Dinox",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/icon.svg",
+    "light": "/logo/icon.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -17,28 +17,36 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "支持",
+      "url": "zmyjust@gmail.com"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "看板",
     "url": "https://dashboard.mintlify.com"
   },
   "tabs": [
     {
-      "name": "理念",
-      "url": "api-reference"
+      "name": "AI 捷径",
+      "url": "prompts"
+    },
+    {
+      "name": "AI 插件",
+      "url": "note-plugin"
+    },
+    {
+      "name": "同步插件",
+      "url": "sync-plugin"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "下载地址",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
     {
-      "name": "Community",
+      "name": "QQ 频道",
       "icon": "slack",
       "url": "https://mintlify.com/community"
     },
@@ -51,35 +59,19 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": [
-        "introduction",
-        "quickstart",
-        "development"
-      ]
+      "pages": ["introduction", "quickstart", "development"]
+    },
+
+    {
+      "group": "使用方法",
+      "pages": ["prompts/tutorial/doc", "prompts/tutorial/fav"]
     },
     {
-      "group": "Essentials",
+      "group": "插件列表",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "sync-plugin/list/ob",
+        "sync-plugin/list/siyuan",
+        "sync-plugin/list/notion"
       ]
     }
   ],
