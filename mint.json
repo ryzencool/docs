@@ -40,6 +40,10 @@
       "url": "sync-plugin"
     },
     {
+      "name": "API文档",
+      "url": "api"
+    },
+    {
       "name": "下载更新",
       "url": "download"
     },
@@ -97,6 +101,10 @@
     {
       "group": "Roadmap",
       "pages": ["roadmap/doc"]
+    },
+    {
+      "group" :"API",
+      "pages": ["api/doc"]
     }
   ],
   "footerSocials": {

@@ -2,95 +2,37 @@
 title: 'Obsidian 同步'
 ---
 
-<Info>
-  **Prerequisite**: Please install Node.js (version 19 or higher) before proceeding.
-</Info>
+## 下载
+https://oss.chatgo.pro/sync-plugin/obsidian/dinox-sync.zip
 
-Step 1. Install Mintlify on your OS:
+## 安装
 
-<CodeGroup>
+因为目前插件并没有上传到官方商店，所以需要下载插件解压后手动安装
 
-```bash npm
-npm i -g mintlify
-```
+1. 通过上看的下载链接下载插件
+2. 将上面的文件放在你的 vault 目录下的 `.obsidian/plugins` 文件夹中，并解压，然后删除 zip 压缩包
+3. 重启 Obsidian 使插件生效
 
-```bash yarn
-yarn global add mintlify
-```
+## 使用
+1. 获取 token
 
-</CodeGroup>
+打开 dinox app 的设置/同步设置/obsidian&思源 点击配置，点击右上角的获取，然后复制 token
 
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
+2. 填写 token
 
-```bash
-mintlify dev
-```
+打开 Obsidian 的配置界面，可以看到社区插件中有 Dinox Sync，点击进行设置，在 Dinox token 中填写第一步获取到的 token
 
-The documentation website is now available at `http://localhost:3000`.
+3. 基本设置介绍
 
-### Custom Ports
+    * Dinox directory：如果想要自定义 Dinox 存储的目录，可以自定义路径
 
-Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
+    * Filename format: 同步笔记文件的文件名，分别有 time 时间，title 标题，noteId 笔记 ID
 
-```bash
-mintlify dev --port 3333
-```
+    * File layout: 同步笔记文件的布局，nested 表示嵌套结构，会根据天创建文件夹，每天的笔记放入到对应文件夹中，flat 表示平铺，所有笔记直接放到自定义路径下
 
-You will see an error like this if you try to run Mintlify in a port that's already taken:
+4. 触发同步
 
-```md
-Error: listen EADDRINUSE: address already in use :::3000
-```
+    点击 Obsidain 右下角状态栏中的 dinox 文字，即可触发同步
 
-## Mintlify Versions
 
-Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
 
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Pro
-  Plan](https://mintlify.com/pricing) and above.
-</Tip>
-
-You should see the following if the deploy successfully went through:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
-
-## Troubleshooting
-
-Here's how to solve some common problems when working with the CLI.
-
-<AccordionGroup>
-  <Accordion title="Mintlify is not loading">
-    Update to Node v18. Run `mintlify install` and try again.
-  </Accordion>
-  <Accordion title="No such file or directory on Windows">
-Go to the `C:/Users/Username/.mintlify/` directory and remove the `mint`
-folder. Then Open the Git Bash in this location and run `git clone
-https://github.com/mintlify/mint.git`.
-
-Repeat step 3.
-
-  </Accordion>
-  <Accordion title="Getting an unknown error">
-    Try navigating to the root of your device and delete the ~/.mintlify folder.
-    Then run `mintlify dev` again.
-  </Accordion>
-</AccordionGroup>
-
-Curious about what changed in a CLI version? [Check out the CLI changelog.](/changelog/command-line)a
