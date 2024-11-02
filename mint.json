@@ -41,7 +41,7 @@
     },
     {
       "name": "API文档",
-      "url": "api"
+      "url": "dinox-api"
     },
     {
       "name": "下载更新",
@@ -104,7 +104,7 @@
     },
     {
       "group" :"API",
-      "pages": ["api/doc"]
+      "pages": ["dinox-api/doc"]
     }
   ],
   "footerSocials": {
